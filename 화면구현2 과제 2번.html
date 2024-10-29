@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설준호 소개</title>
+    <style>
+        /* 공통 스타일 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 3em 0;
+            border-bottom: 5px solid #0056b3;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin: 0.5em 0 0;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        /* 섹션 스타일 */
+        section {
+            width: 90%;
+            max-width: 800px;
+            margin: 2.5em auto;
+            padding: 2.5em;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            color: #007bff;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5em;
+        }
+
+        section p {
+            line-height: 1.8;
+            margin: 0.5em 0;
+        }
+
+        /* 기술 섹션 스타일 */
+        #skills ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #skills ul li {
+            background-color: #e9f3ff;
+            margin: 0.5em 0;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-size: 1.1em;
+        }
+
+        /* 연락처 스타일 */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            margin-top: 3em;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            section {
+                margin: 1em;
+                padding: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>설준호 소개</h1>
+        <p>매사에 열정을 갖고 임하는 사람이 되겠습니다.</p>
+    </header>
+
+    <section id="about">
+        <h2>소개</h2>
+        <p>저는 설준호입니다. 현재 경복대학교 소프트웨어융합학과에 재학 중이며, 관심 분야는 프론트엔드 프로그래밍입니다. 혁신적인 아이디어를 바탕으로 사용자 친화적인 웹 애플리케이션을 개발하는 데 열정을 쏟고 있습니다.</p>
+    </section>
+
+    <section id="skills">
+        <h2>사용 가능한 언어</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>연락처</h2>
+        <div class="contact-info">
+            <p>이메일: <a href="mailto:chisal0814@gmail.com">chisal0814@gmail.com</a></p>
+            <p>전화번호: <a href="tel:010-1234-4240">010-1234-4240</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 설준호. All rights reserved.</p>
+    </footer>
+</body>
+</html>

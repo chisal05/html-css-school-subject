@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디자인을 위하여</title>
+    <style>
+        body {
+            font-family: '바탕', serif;
+            background: linear-gradient(90deg, #D7BDE2, #D5F5E3);
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .menu-button {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #8E44AD;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .center-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .center-text h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+        .center-text p {
+            font-size: 15px;
+            margin: 5px 0;
+        }
+        .auth-links {
+            display: flex;
+            gap: 20px;
+        }
+        .auth-links a {
+            text-decoration: none;
+            color: #2980B9;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button class="menu-button" onclick="toggleMenu()">메뉴</button>
+        <div class="auth-links">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+    <div class="center-text">
+        <h1>모든 이들의 디자인을 위하여</h1>
+        <p>이 사이트는 디자인 하는 방법을 잘 모르겠는 사람들을 위하여 만들어졌습니다.</p>
+    </div>
+    <script>
+        function toggleMenu() {
+            alert("메뉴 버튼 클릭됨");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+#include <stdio.h>
+
+1-③
+c언어 사용 시
+#include <stdio.h>
+
+int main() {
+    int n;
+    float sum = 0.0;
+
+    printf("몇과목인가요? ");
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        float score;
+        printf("점수?%d: ", i + 1);
+        scanf("%f", &score);
+        sum += score;
+    }
+
+    float average = sum / n;
+
+    printf("총점은 %.2f이며,\n", sum);
+    printf("평균점수는 %.2f점입니다.\n", average);
+
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+파이썬언어 사용 시
+
+n = int(input("몇과목인가요? "))
+
+scores = []
+sum_scores = 0.0
+
+for i in range(n):
+    score = float(input(f"점수? {i + 1}: "))
+    scores.append(score)
+    sum_scores += score
+
+average = sum_scores / n
+
+print(f"총점은 {sum_scores:.2f}이며,")
+print(f"평균점수는 {average:.2f}점입니다.")
+
+
+======================================================================================
+
+문제 2번
+
+c언어
+
+#include <stdio.h>
+
+int main() {
+    int lottoNumbers[7]; // 로또 번호를 저장할 배열을 지정한다.
+    int i, j;
+
+
+    for (i = 0; i < 7; ) {
+        int num = (i * 7 + 1) % 46; // 간단한 수식을 이용하여 1부터 45까지의 수를 얻는다.
+
+        // 중복이 있는지 없는지를 검사한다.
+        for (j = 0; j < i; j++) {
+            if (lottoNumbers[j] == num) {
+                break; // 중복이면 반복을 종료한다.
+            }
+        }
+
+        // 중복이 없으면 배열에 추가한다.
+        if (j == i) {
+            lottoNumbers[i] = num; // 배열에 새로운 번호 추가한다.
+            i++; // 다음 번호로 이동한다.
+        }
+    }
+
+    // 생성된 로또 번호 출력한다.
+    printf("인생변화의 번호는: ");
+    for (i = 0; i < 7; i++) {
+        printf("%d ", lottoNumbers[i]);
+    }
+    printf("\n");
+
+    return 0; // 프로그램을 종료한다.
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+파이썬
+import random
+import time
+
+# 현재 시간을 이용하여 시드 설정한다(혹여나의 오류를 방지하기 위함)
+random.seed(time.time())
+
+# 1부터 45까지의 숫자 중에서 중복되지 않는 7개의 숫자를 선택하여 로또 번호 생성한다.
+lotto_numbers = random.sample(range(1, 46), 7)
+
+# 생성된 로또 번호 출력한다.
+print("생성된 로또 번호:", " ".join(map(str, lotto_numbers)))
+
